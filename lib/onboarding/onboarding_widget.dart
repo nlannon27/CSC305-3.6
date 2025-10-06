@@ -38,6 +38,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
 
     _model.socialMediaTextController ??= TextEditingController();
     _model.socialMediaFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
